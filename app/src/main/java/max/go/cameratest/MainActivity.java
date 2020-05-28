@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.GridLayout;
 import android.widget.ImageView;
+import android.widget.TableRow;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -58,8 +59,11 @@ public class MainActivity extends AppCompatActivity {
 
             GridLayout.LayoutParams layoutParams = new GridLayout.LayoutParams();
             layoutParams.width = GridLayout.LayoutParams.WRAP_CONTENT;
-//            layoutParams.height = GridLayout.LayoutParams.MATCH_PARENT;
-
+            layoutParams.height = GridLayout.LayoutParams.MATCH_PARENT;
+//            GridLayout.Spec rowSpec = new
+//            GridLayout.LayoutParams layP = new GridLayout.LayoutParams();
+            TableRow.LayoutParams lp = new TableRow.LayoutParams();
+            lp.weight = 1;
             //TODO: rowWeight into layoutParams
 
             //layoutParams.columnSpec = new
